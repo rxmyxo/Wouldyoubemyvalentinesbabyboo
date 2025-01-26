@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Will You Be My Valentine?</h1>
+        <p>I’ve planned something special just for you!</p>
+    </div>
+
+    <div class="choices">
+        <section class="food">
+            <h2>What would you like to eat?</h2>
+            <select id="food">
+                <option value="pizza">Pizza</option>
+                <option value="sushi">Sushi</option>
+                <option value="pasta">Pasta</option>
+                <option value="salad">Salad</option>
+            </select>
+        </section>
+
+        <section class="activity">
+            <h2>What should we do?</h2>
+            <select id="activity">
+                <option value="movie">Watch a movie</option>
+                <option value="walk">Go for a walk</option>
+                <option value="game">Play a game</option>
+                <option value="dinner">Go to a fancy dinner</option>
+            </select>
+        </section>
+    </div>
+
+    <div class="submit">
+        <button onclick="submitChoices()">Submit</button>
+    </div>
+
+    <div class="response">
+        <h3>Your choices:</h3>
+        <p id="foodResponse"></p>
+        <p id="activityResponse"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
